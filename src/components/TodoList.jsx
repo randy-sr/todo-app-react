@@ -18,7 +18,7 @@ export function TodoList({todos, selectedTab, handleDeleteTodo, handleCompleteTo
               todo={todo}
               handleDeleteTodo={handleDeleteTodo}
               handleCompleteTodo={handleCompleteTodo}
-              todoIndex={todoIndex}
+              todoIndex={todos.findIndex(val => val.input == todo.input)}
               selectedTab={selectedTab}
             />
           )
